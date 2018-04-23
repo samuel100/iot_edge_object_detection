@@ -1,4 +1,4 @@
-# Object Detection on Live Camera Feeds using IoT Edge
+# Deploy TensorFlow Object Detection Models to IoT Edge
 
 This example contains the code and configuration files to deploy a Tensorflow model to IoT Edge in order to do object detection on a live camera feed. Therefore, the inferencing is happening close to the edge device rather than video frames being sent to the cloud for inferencing.
 
