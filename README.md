@@ -10,7 +10,7 @@ The python directory contains the following:
 * frozen_inference_graph.pb - This is the frozen graph from the ssd_mobilenet_v1_coco object detection model (you can get more details and download other models by visting the GitHib Tensorflow/model repo - [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)). In this case, the model has been trained on the [COCO dataset](http://mscoco.org/), which contains 90 everyday objects.
 * labels.txt - This is a json file containing the label classes e.g. person, bottle, cell phone, etc.
 * requirements.txt - Contains the python package dependencies. This is used by the dockerfile (see below). 
-* deployment.template.json - This is the IoT deployment manifest.
+* deployment.template.json - This is the IoT deployment manifest. Note that we have granted the docker image access to the host hardware in `createOptions` - this allows your IoT module to access the camera attached.
 * Dockerfile - Creates the module (docker image) to deploy to IoT edge device.
 
 
