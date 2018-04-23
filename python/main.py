@@ -97,7 +97,7 @@ class HubManager(object):
             outputQueueName, event, send_confirmation_callback, send_context)
 
 def object_detection(hubManager):
-    categories = json.load(open("labels.txt"))
+    categories = json.load(open("labels.json"))
     
     # Read the frozen inference graph (.pb file)
     with tf.gfile.FastGFile('frozen_inference_graph.pb', 'rb') as f:
